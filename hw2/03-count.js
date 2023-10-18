@@ -27,3 +27,9 @@ function findMatch(searchStr) {
   );
   paragraph.innerHTML = text;
 }
+/*Resources used outside of recommeded resources
+https://stackoverflow.com/questions/32130130/how-to-highlight-all-occurrences-of-a-word-on-a-page-with-javascript-or-jquery
+https://www.w3schools.com/jsref/met_element_setattribute.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+https://developer.mozilla.org/en-US/docs/web/api/ui_events/keyboard_event_key_values
+*/
