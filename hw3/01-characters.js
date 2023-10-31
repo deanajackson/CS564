@@ -7,7 +7,7 @@ const displayCharacterComponents = (characters) => {
   app.style.display = "flex";
   app.style.flexWrap = "wrap";
   app.style.justifyContent = "center";
-  console.log("displayCharacterComponents called");
+
   for (const character in characters) {
     const characterComponent = createCharacterComponent(characters[character]);
     app.appendChild(characterComponent);
@@ -36,16 +36,8 @@ const fetchData = (url) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      //charaters.push;
       data.forEach((character) => {
         characters.push(character);
-        console.log(
-          character.firstName,
-          character.lastName,
-          character.fullName,
-          character.title
-        );
       });
       displayCharacterComponents(characters);
     })
@@ -78,3 +70,8 @@ const createCharacterComponent = (character) => {
 
   return container;
 };
+
+/*outside resources
+
+my starships hw3 exercise from CS563 huge help
+*/
