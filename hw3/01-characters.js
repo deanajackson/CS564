@@ -57,7 +57,9 @@ const fetchData = (url) => {
 fetchData(url);
 
 const createCharacterComponent = (character) => {
-  const container = document.createElement("section");
+  const container = document.createElement("div");
+
+  container.classList.add("ex1");
 
   let pic = document.createElement("img");
   let name = document.createElement("p");
